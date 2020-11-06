@@ -1,1 +1,1 @@
-# SnehaK.github.io
+This repository represents my data science portfolio that I have craeted using HTML,CSS and Javascript. As a Jobseeker in the data science field, it helps showcase my skills and endeavors relating to the industry.
