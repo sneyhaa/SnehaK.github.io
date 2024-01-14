@@ -60,7 +60,7 @@
 #banner
 {
     
-    background:  url(img/a911512278292b27dc8053dad229fd5e.jpg);
+    background:  url("img/a911512278292b27dc8053dad229fd5e.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
