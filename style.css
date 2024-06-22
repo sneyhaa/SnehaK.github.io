@@ -91,26 +91,37 @@
     padding-top: 50px;
     padding-bottom: 50px;
     color: #555;
+    background-image: url("img/doughnut.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
 .about-content {
     padding-top: 20px;
     text-align: justify;
     text-justify: inter-word;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.about-image {
-    text-align: center; /* Center the image horizontally if needed */
-    padding-top: 20px;
+#about .container {
+    position: relative;
+    z-index: 2;
 }
 
-.about-image img {
-    max-width: 100%; /* Make sure the image is responsive */
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Center the image */
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Dark overlay for better text contrast */
+    z-index: 1;
 }
-
 
 
 
