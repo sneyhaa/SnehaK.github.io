@@ -112,7 +112,7 @@
     z-index: 2;
 }
 
-#about::before {
+/*#about::before {
     content: "";
     position: absolute;
     top: 0;
@@ -122,6 +122,7 @@
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Dark overlay for better text contrast */
     z-index: 1;
 }
+*/
 
 
 
