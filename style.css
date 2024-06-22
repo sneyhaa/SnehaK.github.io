@@ -108,7 +108,8 @@
 #about .quote
 {
 	padding-top: 20px;
-	background-image: url("img/first%20birthday%20food.jpg");
+	#background-image: url("img/first%20birthday%20food.jpg");
+	background-image: url("img/doughnut.jpg");
 	background-repeat: repeat-x;
 	background-size: cover;
 	
