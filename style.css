@@ -87,33 +87,28 @@
 
 
 /*---About--*/
-#about
-{
+#about {
     padding-top: 50px;
     padding-bottom: 50px;
     color: #555;
-	
-	
-	
 }
 
-.about-content
-{
+.about-content {
     padding-top: 20px;
-	text-align: justify;
-	text-justify: inter-word;
-    
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-#about .quote
-{
-	padding-top: 20px;
-	#background-image: url("img/first%20birthday%20food.jpg");
-	background-image: url("img/doughnut.jpg");
-	background-repeat: repeat-x;
-	background-size: cover;
-	
-	
+.about-image {
+    text-align: center; /* Center the image horizontally if needed */
+    padding-top: 20px;
+}
+
+.about-image img {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
 }
 
 
