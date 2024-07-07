@@ -154,8 +154,9 @@
 
 /*-----PROJECTS-----*/
 
-#projects 
-{
+/*-----PROJECTS-----*/
+
+#projects {
     background-image: linear-gradient(rgba(0,0,0,0.8),#009688),url(img/rene-reichelt-3533-unsplash.jpg.jpg);
     background-size: cover;
     background-position: center;
@@ -165,15 +166,13 @@
     padding-bottom: 50px;
 }
 
-#projects h1
-{
+#projects h1, #projects h2 {
     text-align:center;
     color: #efefef!important;
     padding-bottom: 10px;
 }
 
-#projects h1::after
-{
+#projects h1::after, #projects h2::after {
     content: '';
     background: #efefef;
     display: block;
@@ -182,31 +181,25 @@
     margin: 20px auto 5px;
 }
 
-#projects h3
-{
+#projects h3 {
     text-align:center;
     color: #efefef!important;
     padding-bottom: 10px;
 }
 
-
-#projects p
-{
+#projects p {
     color:whitesmoke;
     font-size: 14px;
     margin-top: 20px;
-    
-    
 }
-#projects .col-md-4:hover
-{
+
+#projects .col-md-4:hover {
     background-color: mediumseagreen;
     cursor: pointer;
     transition: 0.7s;
 }
 
-#projects
-{
+#projects {
     margin-top: 40px;
 }
 
