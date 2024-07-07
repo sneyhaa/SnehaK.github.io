@@ -165,12 +165,12 @@
     color: #efefef;
 }
 
-#projects h1, #projects h2, #projects h3 {
+#projects h1, #projects h2 {
     text-align: center;
     padding-bottom: 10px;
 }
 
-#projects h1::after, #projects h2::after, #projects h3::after {
+#projects h1::after, #projects h2::after {
     content: '';
     background: #efefef;
     display: block;
@@ -179,39 +179,27 @@
     margin: 20px auto 5px;
 }
 
-#projects p {
-    font-family: Arial;
-    font-size: 100%;
+.project-list {
+    list-style: none;
+    padding-left: 0;
     margin-top: 20px;
-    color: whitesmoke;
 }
 
-.project-item {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.button-container {
-    text-align: left;
-    margin-top: 10px;
-}
-
-.button-container a {
-    margin-right: 10px;
-}
-
-.button-container .btn {
+.project-list li {
     margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.project-list li a {
+    text-decoration: none;
+    margin-left: 10px;
 }
 
 @media (min-width: 768px) {
-    .project-item {
-        height: 100%;
+    .project-list {
+        column-count: 2;
     }
 }
-
 
 /*------CERTIFICATES-----*/
 
