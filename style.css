@@ -152,27 +152,25 @@
     
 }
 
-/*-----PROJECTS-----*/
 
-/*-----PROJECTS-----*/
-
+/*----- PROJECTS -----*/
 #projects {
-    background-image: linear-gradient(rgba(0,0,0,0.8),#009688),url(img/rene-reichelt-3533-unsplash.jpg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), #009688), url(img/rene-reichelt-3533-unsplash.jpg.jpg);
     background-size: cover;
     background-position: center;
     background-color: lightpink;
     background-attachment: fixed;
     padding-top: 50px;
     padding-bottom: 50px;
+    color: #efefef;
 }
 
-#projects h1, #projects h2 {
-    text-align:center;
-    color: #efefef!important;
+#projects h1, #projects h2, #projects h3 {
+    text-align: center;
     padding-bottom: 10px;
 }
 
-#projects h1::after, #projects h2::after {
+#projects h1::after, #projects h2::after, #projects h3::after {
     content: '';
     background: #efefef;
     display: block;
@@ -181,27 +179,39 @@
     margin: 20px auto 5px;
 }
 
-#projects h3 {
-    text-align:center;
-    color: #efefef!important;
-    padding-bottom: 10px;
-}
-
 #projects p {
-    color:whitesmoke;
-    font-size: 14px;
+    font-family: Arial;
+    font-size: 100%;
     margin-top: 20px;
+    color: whitesmoke;
 }
 
-#projects .col-md-4:hover {
-    background-color: mediumseagreen;
-    cursor: pointer;
-    transition: 0.7s;
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-#projects {
-    margin-top: 40px;
+.button-container {
+    text-align: left;
+    margin-top: 10px;
 }
+
+.button-container a {
+    margin-right: 10px;
+}
+
+.button-container .btn {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .project-item {
+        height: 100%;
+    }
+}
+
 
 /*------CERTIFICATES-----*/
 
