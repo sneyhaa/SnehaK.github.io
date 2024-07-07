@@ -1,1 +1,6 @@
-This repository represents my data science portfolio that I have created using HTML,CSS and Javascript. As a keen enthusiast and aspirant of the data science field, it helps showcase my skills and endeavors relating to the industry.
+
+# Portfolio Website
+
+## Description
+This project is a personal portfolio website created to showcase my skills, projects, certifications, and more. The website is built using HTML, CSS, and Bootstrap for responsive design, and includes sections such as About Me, Skills, Projects, Certifications, and Contact.
+
