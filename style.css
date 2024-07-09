@@ -155,7 +155,6 @@
 
 /*-----PROJECTS-----*/
 
-
 #projects {
     background-image: linear-gradient(rgba(0,0,0,0.8),#009688),url(img/rene-reichelt-3533-unsplash.jpg.jpg);
     background-size: cover;
@@ -193,16 +192,29 @@
     margin-top: 20px;
 }
 
+#projects .col-md-12 {
+    position: relative;
+}
+
+#projects .hide {
+    display: none;
+}
+
 #projects .col-md-12:hover {
     background-color: mediumseagreen;
     cursor: pointer;
     transition: 0.7s;
 }
 
-#projects {
-    margin-top: 40px;
+#projects .col-md-12:hover .hide {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
 }
-
 
 /*------CERTIFICATES-----*/
 
