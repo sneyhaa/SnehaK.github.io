@@ -392,7 +392,17 @@
             </div>
         </section>
     
-        
+ <script>
+document.querySelectorAll('#projects .col-md-12').forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.querySelector('.hide').style.display = 'block';
+    });
+
+    item.addEventListener('mouseout', () => {
+        item.querySelector('.hide').style.display = 'none';
+    });
+});
+</script>       
     
     </body>
 
