@@ -164,13 +164,13 @@
     padding-bottom: 50px;
 }
 
-#projects h1 {
+#projects h1, #projects h2 {
     text-align: center;
     color: #efefef !important;
     padding-bottom: 10px;
 }
 
-#projects h1::after {
+#projects h1::after, #projects h2::after {
     content: '';
     background: #efefef;
     display: block;
@@ -198,6 +198,10 @@
 }
 
 #projects {
+    margin-top: 40px;
+}
+
+.category {
     margin-top: 40px;
 }
 
