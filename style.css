@@ -172,7 +172,7 @@
 
 #projects h1::after, #projects h2::after {
     content: '';
-    background: #efefef;
+    background: #ffffff;
     display: block;
     height: 3px;
     width: 170px;
