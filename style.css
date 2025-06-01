@@ -91,7 +91,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     color: #555;
-    background-image: url("img/Doughnutc.png");
+    /*---background-image: url("img/Doughnutc.png");---*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -125,7 +125,7 @@
 */
 
 
-
+/*---GET RID OF SKILLS BAR ---*/
 .skills-bar p
 {
     margin-bottom: 6px;
