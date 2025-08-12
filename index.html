@@ -3,425 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneha Karki - Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Sneha Karki - Data Scientist & Storyteller</title>
     <style>
-        :root {
-            --primary-color: #6c5ce7;
-            --secondary-color: #a29bfe;
-            --accent-color: #fd79a8;
-            --light-bg: #f8f9ff;
-            --white: #ffffff;
-            --text-dark: #2d3436;
-            --text-light: #636e72;
-            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: var(--text-dark);
-            background-color: var(--white);
-        }
-
-        /* Navigation */
-        .navbar {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .navbar-brand {
-            font-weight: 700;
-            font-size: 1.5rem;
-            color: var(--primary-color) !important;
-        }
-
-        .nav-link {
-            font-weight: 500;
-            color: var(--text-dark) !important;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: var(--primary-color) !important;
-            transform: translateY(-2px);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: var(--gradient-1);
-            color: white;
-            padding: 120px 0 80px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><polygon points="0,0 1000,100 1000,0"/></svg>');
-            background-size: cover;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
-
-        .hero-cta {
-            animation: fadeInUp 1s ease 0.4s both;
-        }
-
-        .btn-hero {
-            background: var(--white);
-            color: var(--primary-color);
-            padding: 12px 30px;
-            border: none;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-            margin: 0 10px;
-        }
-
-        .btn-hero:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            color: var(--primary-color);
-        }
-
-        /* About Section */
-        .about {
-            padding: 100px 0;
-            background: var(--light-bg);
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 20px;
-        }
-
-        .section-title p {
-            font-size: 1.1rem;
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .about-content {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
-        }
-
-        .about-content p {
-            font-size: 1.1rem;
-            color: var(--text-light);
-            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
         
-        .profile-image {
-            width: 200px; /* adjust size as needed */
-            height: 200px;
-            border-radius: 8px; /* slight rounded corners; remove or set to 0 for perfect square */
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional shadow for depth */
-            display: block;
-            margin: 0 auto; /* centers the image */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-
-
-
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero .description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            opacity: 0.8;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+        
+        .btn-primary:hover {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+        
+        /* Skills Section */
+        .skills {
+            background: white;
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .skill-category {
+            background: #f8f9ff;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
         /* Projects Section */
         .projects {
-            padding: 100px 0;
-            background: white;
+            padding: 80px 0;
+            background: #f8f9ff;
         }
-
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
         .project-card {
             background: white;
-            border-radius: 20px;
+            border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
         }
-
+        
         .project-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
-
-        .project-image {
-            height: 200px;
-            background: var(--gradient-2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project-image i {
-            font-size: 3rem;
+        
+        .project-header {
+            background: linear-gradient(45deg, #667eea, #764ba2);
             color: white;
-            opacity: 0.8;
+            padding: 1.5rem;
+            position: relative;
         }
-
-        .project-content {
-            padding: 30px;
+        
+        .project-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
         }
-
+        
         .project-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
         }
-
+        
+        .project-subtitle {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
         .project-description {
-            color: var(--text-light);
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
             line-height: 1.6;
         }
-
-        .project-tech {
-            margin-bottom: 20px;
+        
+        .project-impact {
+            background: #e8f4fd;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            border-left: 4px solid #2196F3;
         }
-
+        
+        .project-impact strong {
+            color: #2196F3;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
         .tech-tag {
-            display: inline-block;
-            background: var(--light-bg);
-            color: var(--primary-color);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin: 3px;
-            font-weight: 500;
-        }
-
-        .project-links a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-            margin-right: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .project-links a:hover {
-            color: var(--accent-color);
-        }
-
-        .project-links i {
-            margin-right: 5px;
-        }
-
-        /* Certificates Section */
-        .certificates {
-            padding: 80px 0;
-            background: var(--light-bg);
-        }
-
-        .cert-card {
-            background: white;
+            background: #f0f0f0;
+            color: #555;
+            padding: 4px 12px;
             border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
+            font-size: 0.8rem;
         }
-
-        .cert-card:hover {
-            transform: translateY(-5px);
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
         }
-
-        .cert-card img {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            margin-bottom: 15px;
-        }
-
-        .cert-card h5 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 10px;
-        }
-
-        .cert-card .btn {
-            background: var(--gradient-1);
-            border: none;
-            border-radius: 20px;
+        
+        .project-link {
             padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
             font-size: 0.9rem;
+            transition: all 0.3s;
         }
-
+        
+        .link-code {
+            background: #333;
+            color: white;
+        }
+        
+        .link-code:hover {
+            background: #555;
+        }
+        
+        .link-demo {
+            background: #667eea;
+            color: white;
+        }
+        
+        .link-demo:hover {
+            background: #5a67d8;
+        }
+        
         /* Contact Section */
         .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             padding: 80px 0;
-            background: var(--gradient-3);
-            color: white;
+            text-align: center;
         }
-
-        .contact-info {
+        
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s;
+        }
+        
+        .contact-link:hover {
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            text-align: center;
+            border-color: white;
         }
-
-        .contact-item {
-            margin: 20px 0;
-            font-size: 1.1rem;
-        }
-
-        .contact-item i {
-            margin-right: 10px;
-            width: 20px;
-        }
-
-        .social-links {
-            margin-top: 30px;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 15px;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            transform: translateY(-3px);
-            color: var(--accent-color);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--text-dark);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease forwards;
-        }
-
+        
         /* Responsive */
         @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
             .hero h1 {
                 font-size: 2.5rem;
             }
             
-            .hero p {
-                font-size: 1.1rem;
+            .projects-grid {
+                grid-template-columns: 1fr;
             }
             
-            .section-title h2 {
-                font-size: 2rem;
+            .cta-buttons, .contact-links {
+                flex-direction: column;
+                align-items: center;
             }
-            
-            .project-card {
-                margin-bottom: 20px;
-            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Section spacing */
+        section {
+            scroll-margin-top: 80px;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <!-- Header -->
+    <header>
         <div class="container">
-            <a class="navbar-brand" href="#home">Sneha Karki</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certificates">Certificates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+            <nav>
+                <div class="logo">Sneha Karki</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h1>Sneha Karki</h1>
-            <p>Data Science | Business Intelligence | Strategic Insights</p>
+            <div class="hero-content">
+                <h1>Data Scientist & Storyteller</h1>
+                <p class="subtitle">Turning Complex Data into Compelling Business Solutions</p>
+                <p class="description">I'm Sneha Karki – a creative data scientist who transforms numbers into narratives and insights into impact. With expertise spanning machine learning, predictive analytics, and business intelligence, I help organizations make data-driven decisions that drive real results.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="hero-cta">
-                <a href="#projects" class="btn-hero">View My Work</a>
-                <a href="#contact" class="btn-hero">Get In Touch</a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming & Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">Random Forest</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Visualization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Plotly</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Matplotlib</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -429,242 +459,162 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-                <p>Turning complex data into compelling stories and actionable insights</p>
-            </div>
-
-            <div class="row">
-                <!-- Project 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-users"></i>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Cancer Prediction Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-category">Healthcare AI</div>
+                        <h3 class="project-title">Breast Cancer Prediction System</h3>
+                        <p class="project-subtitle">Machine Learning for Medical Diagnosis</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Built an end-to-end machine learning system to predict breast cancer malignancy using the Wisconsin Diagnostic dataset. Implemented multiple algorithms and deployed the best-performing model.</p>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> Achieved 97.4% accuracy with Random Forest, potentially helping doctors make faster, more accurate diagnoses
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Customer Segmentation - RFM Clustering</h3>
-                            <p class="project-description">Advanced customer segmentation using RFM (Recency, Frequency, Monetary) analysis to identify distinct customer groups and optimize marketing strategies for retail businesses.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Machine Learning</span>
-                                <span class="tech-tag">Clustering</span>
-                                <span class="tech-tag">Data Analysis</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/sneyhaa/Customer-Segmentation-RFM-Clustering-Retail/" target="_blank">
-                                    <i class="fab fa-github"></i>View Code
-                                </a>
-                            </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Seaborn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link link-code">View Code</a>
+                            <a href="#" class="project-link link-demo">Live Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image" style="background: var(--gradient-1);">
-                            <i class="fas fa-newspaper"></i>
+                <!-- Movie Recommendation Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-category">Recommendation System</div>
+                        <h3 class="project-title">Intelligent Movie Recommender</h3>
+                        <p class="project-subtitle">Content-Based Filtering Algorithm</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Developed a sophisticated movie recommendation engine using content-based filtering, analyzing movie features like genre, cast, and plot to suggest personalized recommendations.</p>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> Processing 5000+ movies to deliver personalized recommendations, improving user engagement by suggesting relevant content
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Fake News Detection using Voting Technique</h3>
-                            <p class="project-description">Machine learning model that combines multiple algorithms using ensemble voting to detect fake news with high accuracy, helping combat misinformation.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">NLP</span>
-                                <span class="tech-tag">Ensemble Learning</span>
-                                <span class="tech-tag">Text Processing</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/sneyhaa/Fake-News-Detection-using-Voting-Technique" target="_blank">
-                                    <i class="fab fa-github"></i>View Code
-                                </a>
-                            </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link link-code">View Code</a>
+                            <a href="#" class="project-link link-demo">Try It Out</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image" style="background: var(--gradient-3);">
-                            <i class="fas fa-tv"></i>
+                <!-- Heart Disease Prediction -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-category">Predictive Analytics</div>
+                        <h3 class="project-title">Heart Disease Risk Predictor</h3>
+                        <p class="project-subtitle">Multi-Algorithm Comparison Study</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Comprehensive analysis comparing 8 different machine learning algorithms to predict heart disease risk. Implemented feature engineering and hyperparameter tuning for optimal performance.</p>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> Achieved 85%+ accuracy across multiple models, providing valuable insights for preventive healthcare planning
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Analysis of Streaming Shows</h3>
-                            <p class="project-description">Comprehensive analysis of streaming platforms and TV shows, exploring trends, ratings, and viewer preferences across different platforms like Netflix, Hulu, and Amazon Prime.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Data Visualization</span>
-                                <span class="tech-tag">EDA</span>
-                                <span class="tech-tag">Statistical Analysis</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/sneyhaa/Analysis-of-shows-on-streaming-platforms" target="_blank">
-                                    <i class="fab fa-github"></i>View Code
-                                </a>
-                                <a href="https://medium.com/swlh/analyzing-streaming-platforms-and-tv-shows-cddc8484faf3" target="_blank">
-                                    <i class="fab fa-medium"></i>Read Blog
-                                </a>
-                            </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">GridSearchCV</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link link-code">View Code</a>
+                            <a href="#" class="project-link link-demo">Explore Analysis</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <i class="fas fa-credit-card"></i>
+                <!-- Ecommerce Analytics -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-category">Business Analytics</div>
+                        <h3 class="project-title">E-commerce Revenue Optimizer</h3>
+                        <p class="project-subtitle">Advanced Sales Analytics Dashboard</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Built a comprehensive analytics dashboard for e-commerce sales data, featuring customer segmentation, seasonal trend analysis, and revenue optimization recommendations.</p>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> Analyzed $2M+ in transaction data, identified 23% revenue opportunity through customer segmentation insights
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Credit Score Classification</h3>
-                            <p class="project-description">Predictive model to classify credit scores using machine learning algorithms, helping financial institutions assess credit risk and make informed lending decisions.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Classification</span>
-                                <span class="tech-tag">Feature Engineering</span>
-                                <span class="tech-tag">Model Evaluation</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/sneyhaa/CreditScoreClassification" target="_blank">
-                                    <i class="fab fa-github"></i>View Code
-                                </a>
-                            </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link link-code">View Code</a>
+                            <a href="#" class="project-link link-demo">See Dashboard</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
-                            <i class="fas fa-brain"></i>
+                <!-- Netflix Analysis -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-category">Data Visualization</div>
+                        <h3 class="project-title">Netflix Content Strategy Analysis</h3>
+                        <p class="project-subtitle">Comprehensive Content Trends Study</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Deep-dive analysis of Netflix's content library, uncovering trends in genre preferences, content production patterns, and global expansion strategies through interactive visualizations.</p>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> Analyzed 8000+ titles revealing key content strategies and geographic expansion patterns for streaming platforms
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Mental Health Diagnosis Prediction</h3>
-                            <p class="project-description">Machine learning model to predict mental health diagnosis in academic settings, analyzing various factors that contribute to mental health issues among students.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Healthcare Analytics</span>
-                                <span class="tech-tag">Predictive Modeling</span>
-                                <span class="tech-tag">Statistical Analysis</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/sneyhaa/Predicting-Mental-Health-Diagnosis-in-Academia" target="_blank">
-                                    <i class="fab fa-github"></i>View Code
-                                </a>
-                            </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">Seaborn</span>
+                            <span class="tech-tag">WordCloud</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link link-code">View Code</a>
+                            <a href="#" class="project-link link-demo">Interactive Report</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Netflix Dashboard</h3>
-                            <p class="project-description">Interactive Tableau dashboard analyzing Netflix content, including genre distribution, release trends, and regional content preferences with dynamic filtering capabilities.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Tableau</span>
-                                <span class="tech-tag">Data Visualization</span>
-                                <span class="tech-tag">Dashboard Design</span>
-                                <span class="tech-tag">Interactive Analytics</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://public.tableau.com/app/profile/sneha.karki/viz/NetflixGeneralDashboard/Netflix" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>View Dashboard
-                                </a>
-                            </div>
-                        </div>
+                <!-- Stock Analysis -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-category">Financial Analytics</div>
+                        <h3 class="project-title">Stock Market Trend Analyzer</h3>
+                        <p class="project-subtitle">Technical Analysis & Prediction Model</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <p>Get to know the person behind the data</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="about-content">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="profile-image-container">
-                                    <img src="img/photo.jpg" alt="Sneha Karki" class="profile-image">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                              
-                                <div class="greeting">Hi, I'm Sneha! </div>
-
-                                    <p>I transform complex data into strategic business value at the intersection of data science and strategy.</p>
-                                    
-                                    <p>With an MS in Data Science from Michigan Tech, I turn raw data into executive-ready insights through predictive modeling and strategic dashboards. 
-                                    My toolkit—<span class="tech-stack"><span class="tech-item">Python</span><span class="tech-item">SQL</span><span class="tech-item">Tableau</span><span class="tech-item">AWS</span></span>—is always applied with real business impact in mind.</p>
-                                    
-                                    <p>What drives me most?<span class="highlight"> Quantifying uncertainty.</span> I bridge the gap between ambiguity and clarity through rigorous experimentation, helping organizations move from "we think" to "we know." </p>
-
-                                    <p>Data science isn't just algorithms—it's about enabling faster, smarter, more confident decision-making at scale.</p>
-                                
-                                    <p>Outside work, I recharge through hiking, experimenting with healthy recipes, and great films—pursuits that keep my curiosity sharp and creativity flowing.</p>
-                                    
-                                    <div class="tagline">
-                                        Great data science informs strategy. Smart strategy fuels impact.
-                                    </div>
-                                </div>
-
-                            </div>
+                    <div class="project-content">
+                        <p class="project-description">Comprehensive stock market analysis tool combining technical indicators, sentiment analysis, and machine learning to predict price movements and identify trading opportunities.</p>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> Built predictive models with 78% directional accuracy, analyzing 500+ stocks with real-time data integration
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
-        <div class="container">
-            <div class="section-title">
-                <h2>Certificates</h2>
-                <p>Continuous learning and professional development</p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="cert-card">
-                        <div class="mb-3">
-                            <i class="fab fa-python fa-3x" style="color: var(--primary-color);"></i>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">yfinance</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">TA-Lib</span>
                         </div>
-                        <h5>Data Analysis with Python</h5>
-                        <p class="text-muted small">Jovian</p>
-                        <a href="https://jovian.ai/certificate/MFQTEOBQGE" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cert-card">
-                        <div class="mb-3">
-                            <i class="fas fa-calculator fa-3x" style="color: var(--secondary-color);"></i>
+                        <div class="project-links">
+                            <a href="#" class="project-link link-code">View Code</a>
+                            <a href="#" class="project-link link-demo">Live Analysis</a>
                         </div>
-                        <h5>Data Science Math Skills</h5>
-                        <p class="text-muted small">Coursera</p>
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/YP47B4CZPH2X" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cert-card">
-                        <div class="mb-3">
-                            <i class="fas fa-bullhorn fa-3x" style="color: var(--accent-color);"></i>
-                        </div>
-                        <h5>Digital Marketing</h5>
-                        <p class="text-muted small">Google</p>
-                        <a href="https://learndigital.withgoogle.com/digitalgarage/course/digital-marketing" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
                     </div>
                 </div>
             </div>
@@ -674,42 +624,27 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-title">
-                <h2 style="color: white;">Get In Touch</h2>
-                <p style="color: rgba(255,255,255,0.8);">Let's connect and explore opportunities together</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            sneha.datasci@gmail.com
-                        </div>
-                        <div class="social-links">
-                            <a href="https://medium.com/@snehakarki.1230" target="blank">
-                                <i class="fab fa-medium"></i>
-                            </a>
-                            <a href="https://sneyhastartswriting.wordpress.com/" target="blank">
-                                <i class="fab fa-wordpress"></i>
-                            </a>
-                            <a href="https://github.com/sneyhaa" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
+            <div class="contact-content">
+                <h2 class="section-title" style="color: white;">Let's Build Something Amazing Together</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">Ready to turn your data challenges into competitive advantages? I'm always excited to discuss new opportunities and collaborations.</p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        📧 Email Me
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" class="contact-link">
+                        💼 LinkedIn
+                    </a>
+                    <a href="https://github.com/sneyhaa" class="contact-link">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="contact-link">
+                        📄 Resume
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Sneha Karki. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -725,33 +660,14 @@
             });
         });
 
-        // Add scroll effect to navbar
+        // Add scroll effect to header
         window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
             } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
             }
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
-                }
-            });
-        }, observerOptions);
-
-        // Observe project cards
-        document.querySelectorAll('.project-card').forEach(card => {
-            observer.observe(card);
         });
     </script>
 </body>
